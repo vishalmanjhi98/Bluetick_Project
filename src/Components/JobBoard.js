@@ -39,7 +39,7 @@ const JobBoard = () => {
   }, [pageNumber]);
 
   return (
-    <div className="job-board">
+    <div style={{marginTop:"10px", marginBottom:"10px"}} className="job-board">
       <h1 style={{display:"flex", justifyContent:"center"}} >< strong style={{color:"blue"}}>Job</strong>Board</h1>
       {jobPostings.map((job) => (
         <JobPosting key={job.id} job={job} />
